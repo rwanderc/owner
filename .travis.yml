@@ -14,9 +14,8 @@ jdk:
 
 os:
   - linux
-  - windows
 
-install: mvn install -DskipTests=true -B
+install: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 script: mvn test -B
 
 after_success:
